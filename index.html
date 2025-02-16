@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<script src="js/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
+    
+<script>
+  window.pixelId = "677c74c291b3f5fb998c50cc";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+  
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '466842849697857');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=466842849697857&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação de Idade</title>
+  <style>
+    /* Reset básico e estilos globais */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1a1a1a; /* Fundo escuro */
+      color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .notification {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #e0ffe0;
+      color: #006400;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      animation: slideUp 4s ease-in-out infinite;
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      20%, 80% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+    }
+
+    .container {
+      background-color: #ffffff; /* Fundo branco do quadrado */
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      max-width: 120px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333; /* Texto mais escuro para contraste no fundo branco */
+    }
+
+    .subtitle {
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .button {
+      display: inline-block;
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      background-color: #007bff; /* Azul do botão */
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background-color: #0056b3; /* Azul mais escuro no hover */
+      transform: scale(1.05);
+    }
+
+    .button:active {
+      transform: scale(1);
+    }
+
+    .button-red {
+      background-color: #ff4d4d; /* Vermelho para a segunda opção */
+    }
+
+    .button-red:hover {
+      background-color: #cc0000;
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 20px;
+      }
+      .button {
+        font-size: 16px;
+      }
+    }
+  </style>
+  <script async="" src="js/fbevents.js"></script><script>
+    // Lista de 15 nomes masculinos
+    const nomes = [
+      "Lucas", "Pedro", "Gabriel", "Matheus", "Rafael",
+      "João", "Guilherme", "Henrique", "Felipe", "Diego",
+      "Victor", "Bruno", "Leonardo", "Tiago", "Eduardo"
+    ];
+
+    // Variável de índice para exibir os nomes em sequência
+    let indiceAtual = 0;
+
+    // Função para atualizar o nome exibido
+    function atualizarNome() {
+      const notification = document.getElementById("notification");
+      notification.textContent = `${nomes[indiceAtual]} entrou no Privacy!`;
+      indiceAtual = (indiceAtual + 1) % nomes.length; // Volta ao início após o último nome
+    }
+
+    // Inicia o loop para mudar o nome a cada 4 segundos
+    setInterval(atualizarNome, 4000);
+  </script>
+</head>
+<body>
+  <!-- Notificação no canto inferior direito -->
+  <div id="notification" class="notification"></div>
+
+  <div class="container">
+    <!-- Logo no topo -->
+    <img src="images/yFoSr3g.jpg" alt="Logo" class="logo">
+
+    <!-- Título -->
+    <p class="title">Confirmação de Idade</p>
+
+    <!-- Texto explicativo -->
+    <p class="subtitle">
+      Este conteúdo é destinado exclusivamente para maiores de 18 anos. Por favor, confirme sua idade para continuar.
+    </p>
+
+    <!-- Botões -->
+    <a class="button btn-ba"  onclick="redirecionar(event)">Tenho mais de 18 anos</a>
+
+<a class="button button-red btn-ba" onclick="redirecionar(event)">Não tenho 18 anos</a>
+  </div>
+
+
+  <script>
+    function redirecionar(event) {
+            event.preventDefault(); // Previne o redirecionamento imediato
+    
+            const baseUrl = new URL('conteudo.html', window.location.origin);
+            const currentParams = new URLSearchParams(window.location.search);
+    
+            // Adicionar apenas os parâmetros que ainda não estão no link
+            for (const [key, value] of currentParams.entries()) {
+                if (!baseUrl.searchParams.has(key)) {
+                    baseUrl.searchParams.append(key, value);
+                }
+            }
+    
+            // Redirecionar preservando os parâmetros
+            window.location.href = baseUrl.toString();
+        }
+</script>
+
+</body></html>
